@@ -3,3 +3,13 @@ const SUPABASE_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
+export async function getAllCreatures() {
+    const response = await client.from('magic_creatures').select();
+    return response.data;
+}
+
+export async function getCreature(id) {
+    const response = await client.from('magic_creatures').select().match({ id: id }).single();
+
+    return response.data;
+}
