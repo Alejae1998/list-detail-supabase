@@ -6,7 +6,7 @@ export function renderCreature(creature) {
     div.classList.add('creature-card');
     p.textContent = creature.name;
     img.src = `./assets/${creature.name}.jpeg`;
-    a.href = ''; //link to creatures detail page
+    a.href = `./detail/?id=${creature.id}`; //link to creatures detail page
 
     div.append(p, img);
     a.append(div);
@@ -24,7 +24,7 @@ export function renderCreatureDetail(creature) {
     descriptionEl.textContent = creature.description;
     descriptionEl.classList.add('description');
 
-    img.src = `./assets/${creature.name}.jpeg`;
+    img.src = `../assets/${creature.name}.jpeg`;
 
     div.append(nameEl, img, descriptionEl);
 

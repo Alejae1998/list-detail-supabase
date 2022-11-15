@@ -55,3 +55,25 @@ header {
     width: 200px;
     height: 200px;
 }
+
+.creature-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+
+.creature-detail .name {
+    font-size: 2rem;
+}
+
+.creature-detail img {
+    margin: 40px;
+    width: 80%;
+}
+
+.creature-detail .description {
+    font-size: 1.2rem;
+    margin: 20px;
+    padding: 20px;
+}
