@@ -1,21 +1,57 @@
 :root {
     font-family: 'Harry Potter', sans-serif;
+    text-shadow: 2px 2px 4px black;
     background-image: src('../assets/WW_img.jpeg');
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
 header {
-    padding: 20px;
-    background: black;
+    padding: 10px;
+    background-color: black;
+    font-family: 'Harry Potter', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1 {
-    background: white;
-    padding: 15px;
-}
 #beasts-list-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 50px;
+}
+.creature-card {
+    color: black;
+    text-shadow: 2px 2px 4px;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: black;
+    height: 300px;
+}
+.creature-card img {
+    width: 50%;
+    border-radius: 20px;
+}
+.div {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 1px black;
+    width: 200px;
+    height: 200px;
 }
