@@ -1,8 +1,21 @@
 :root {
     font-family: 'Harry Potter', sans-serif;
+    background-image: src('../assets/WW_img.jpeg');
 }
 
 header {
     padding: 20px;
     background: black;
+}
+
+h1 {
+    background: white;
+    padding: 15px;
+}
+#beasts-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 50px;
 }
