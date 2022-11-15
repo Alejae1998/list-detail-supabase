@@ -53,6 +53,8 @@ a {
 
 header {
     display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     background-color: white;
@@ -60,12 +62,14 @@ header {
     box-shadow: var(--shadow);
     height: 100%;
     width: 150px;
+    padding: 20px;
     top: 0;
 }
 
 header a {
     font-weight: 900;
-    color: black;
+    color: white;
+    padding: 200px;
     margin-top: 20px;
     font-size: 1.5rem;
 }
@@ -80,7 +84,11 @@ h2 {
 }
 
 p {
-    margin: 0px;
+    margin: 20px;
+    color: white;
+}
+p.description {
+    color: black;
 }
 
 #beast-list-container {
